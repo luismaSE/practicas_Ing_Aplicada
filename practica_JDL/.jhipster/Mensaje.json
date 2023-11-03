@@ -1,0 +1,41 @@
+{
+  "applications": "*",
+  "changelogDate": "20231026163856",
+  "entityTableName": "mensaje",
+  "fields": [
+    {
+      "fieldName": "autor",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fechaPublicacion",
+      "fieldType": "ZonedDateTime"
+    },
+    {
+      "fieldName": "textoMensaje",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "etiquetas",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Mensaje",
+  "relationships": [
+    {
+      "otherEntityName": "usuario",
+      "otherEntityRelationshipName": "mensajes",
+      "relationshipName": "autor",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "etiqueta",
+      "otherEntityRelationshipName": "mensajes",
+      "relationshipName": "etiquetas",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

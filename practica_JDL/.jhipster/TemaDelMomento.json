@@ -1,0 +1,18 @@
+{
+  "applications": "*",
+  "changelogDate": "20231026164256",
+  "entityTableName": "tema_del_momento",
+  "fields": [
+    {
+      "fieldName": "etiqueta",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "numeroRepeticiones",
+      "fieldType": "Integer"
+    }
+  ],
+  "name": "TemaDelMomento",
+  "relationships": [],
+  "searchEngine": "no"
+}

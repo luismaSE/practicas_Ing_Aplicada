@@ -1,0 +1,9 @@
+{
+  "applications": "*",
+  "changelogDate": "20231026164056",
+  "entityTableName": "tablon_de_anuncios",
+  "fields": [],
+  "name": "TablonDeAnuncios",
+  "relationships": [],
+  "searchEngine": "no"
+}

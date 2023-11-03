@@ -1,0 +1,82 @@
+{
+  "applications": ["microblog"],
+  "changelogDate": "20231027205111",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "usuario",
+  "fields": [
+    {
+      "fieldName": "alias",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nombre",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "correo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "contrasenia",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "descripcion",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "admin",
+      "fieldType": "Boolean"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Usuario",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityName": "usuario",
+      "otherEntityRelationshipName": "seguidores",
+      "ownerSide": true,
+      "relationshipName": "siguiendo",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "mensaje",
+      "otherEntityRelationshipName": "autor",
+      "ownerSide": false,
+      "relationshipName": "mensajePublicado",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "mensajePrivado",
+      "otherEntityRelationshipName": "autor",
+      "ownerSide": false,
+      "relationshipName": "mensajePrivadoEnviado",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "mensajePrivado",
+      "otherEntityRelationshipName": "destino",
+      "ownerSide": false,
+      "relationshipName": "mensajePrivadoRecibido",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "mensaje",
+      "otherEntityRelationshipName": "menciones",
+      "relationshipName": "mensajeMencionado",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "usuario",
+      "otherEntityRelationshipName": "siguiendo",
+      "ownerSide": false,
+      "relationshipName": "seguidores",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "service": "no"
+}

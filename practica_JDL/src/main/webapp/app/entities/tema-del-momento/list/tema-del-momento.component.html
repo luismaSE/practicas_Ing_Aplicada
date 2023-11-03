@@ -1,0 +1,107 @@
+<div>
+  <h2 id="page-heading" data-cy="TemaDelMomentoHeading">
+    <span jhiTranslate="jhLogstashApp.temaDelMomento.home.title">__jhiTransformTranslate__('jhLogstashApp.temaDelMomento.home.title')</span>
+
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-info me-2" (click)="load()" [disabled]="isLoading">
+        <fa-icon icon="sync" [spin]="isLoading"></fa-icon>
+        <span jhiTranslate="jhLogstashApp.temaDelMomento.home.refreshListLabel"
+          >__jhiTransformTranslate__('jhLogstashApp.temaDelMomento.home.refreshListLabel')</span
+        >
+      </button>
+
+      <button
+        id="jh-create-entity"
+        data-cy="entityCreateButton"
+        class="btn btn-primary jh-create-entity create-tema-del-momento"
+        [routerLink]="['/tema-del-momento/new']"
+      >
+        <fa-icon icon="plus"></fa-icon>
+        <span jhiTranslate="jhLogstashApp.temaDelMomento.home.createLabel"
+          >__jhiTransformTranslate__('jhLogstashApp.temaDelMomento.home.createLabel')</span
+        >
+      </button>
+    </div>
+  </h2>
+
+  <jhi-alert-error></jhi-alert-error>
+
+  <jhi-alert></jhi-alert>
+
+  <div class="alert alert-warning" id="no-result" *ngIf="temaDelMomentos?.length === 0">
+    <span jhiTranslate="jhLogstashApp.temaDelMomento.home.notFound"
+      >__jhiTransformTranslate__('jhLogstashApp.temaDelMomento.home.notFound')</span
+    >
+  </div>
+
+  <div class="table-responsive table-entities" id="entities" *ngIf="temaDelMomentos && temaDelMomentos.length > 0">
+    <table class="table table-striped" aria-describedby="page-heading">
+      <thead>
+        <tr jhiSort [(predicate)]="predicate" [(ascending)]="ascending" (sortChange)="navigateToWithComponentValues()">
+          <th scope="col" jhiSortBy="id">
+            <div class="d-flex">
+              <span jhiTranslate="global.field.id">__jhiTransformTranslate__('global.field.id')</span>
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col" jhiSortBy="etiqueta">
+            <div class="d-flex">
+              <span jhiTranslate="jhLogstashApp.temaDelMomento.etiqueta"
+                >__jhiTransformTranslate__('jhLogstashApp.temaDelMomento.etiqueta')</span
+              >
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col" jhiSortBy="numeroRepeticiones">
+            <div class="d-flex">
+              <span jhiTranslate="jhLogstashApp.temaDelMomento.numeroRepeticiones"
+                >__jhiTransformTranslate__('jhLogstashApp.temaDelMomento.numeroRepeticiones')</span
+              >
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let temaDelMomento of temaDelMomentos; trackBy: trackId" data-cy="entityTable">
+          <td>
+            <a [routerLink]="['/tema-del-momento', temaDelMomento.id, 'view']">{{ temaDelMomento.id }}</a>
+          </td>
+          <td>{{ temaDelMomento.etiqueta }}</td>
+          <td>{{ temaDelMomento.numeroRepeticiones }}</td>
+          <td class="text-end">
+            <div class="btn-group">
+              <button
+                type="submit"
+                [routerLink]="['/tema-del-momento', temaDelMomento.id, 'view']"
+                class="btn btn-info btn-sm"
+                data-cy="entityDetailsButton"
+              >
+                <fa-icon icon="eye"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">__jhiTransformTranslate__('entity.action.view')</span>
+              </button>
+
+              <button
+                type="submit"
+                [routerLink]="['/tema-del-momento', temaDelMomento.id, 'edit']"
+                class="btn btn-primary btn-sm"
+                data-cy="entityEditButton"
+              >
+                <fa-icon icon="pencil-alt"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">__jhiTransformTranslate__('entity.action.edit')</span>
+              </button>
+
+              <button type="submit" (click)="delete(temaDelMomento)" class="btn btn-danger btn-sm" data-cy="entityDeleteButton">
+                <fa-icon icon="times"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.delete"
+                  >__jhiTransformTranslate__('entity.action.delete')</span
+                >
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

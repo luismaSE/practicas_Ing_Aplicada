@@ -1,0 +1,27 @@
+{
+  "microblogApp": {
+    "mensajePrivado": {
+      "home": {
+        "title": "Mensaje Privados",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Mensaje Privado",
+        "createOrEditLabel": "Create or edit a Mensaje Privado",
+        "notFound": "No Mensaje Privados found"
+      },
+      "created": "A new Mensaje Privado is created with identifier {{ param }}",
+      "updated": "A Mensaje Privado is updated with identifier {{ param }}",
+      "deleted": "A Mensaje Privado is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Mensaje Privado {{ id }}?"
+      },
+      "detail": {
+        "title": "Mensaje Privado"
+      },
+      "id": "ID",
+      "texto": "Texto",
+      "fecha": "Fecha",
+      "autor": "Autor",
+      "destino": "Destino"
+    }
+  }
+}

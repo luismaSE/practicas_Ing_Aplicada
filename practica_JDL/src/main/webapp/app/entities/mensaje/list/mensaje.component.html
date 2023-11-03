@@ -1,0 +1,140 @@
+<div>
+  <h2 id="page-heading" data-cy="MensajeHeading">
+    <span jhiTranslate="jhLogstashApp.mensaje.home.title">__jhiTransformTranslate__('jhLogstashApp.mensaje.home.title')</span>
+
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-info me-2" (click)="load()" [disabled]="isLoading">
+        <fa-icon icon="sync" [spin]="isLoading"></fa-icon>
+        <span jhiTranslate="jhLogstashApp.mensaje.home.refreshListLabel"
+          >__jhiTransformTranslate__('jhLogstashApp.mensaje.home.refreshListLabel')</span
+        >
+      </button>
+
+      <button
+        id="jh-create-entity"
+        data-cy="entityCreateButton"
+        class="btn btn-primary jh-create-entity create-mensaje"
+        [routerLink]="['/mensaje/new']"
+      >
+        <fa-icon icon="plus"></fa-icon>
+        <span jhiTranslate="jhLogstashApp.mensaje.home.createLabel"
+          >__jhiTransformTranslate__('jhLogstashApp.mensaje.home.createLabel')</span
+        >
+      </button>
+    </div>
+  </h2>
+
+  <jhi-alert-error></jhi-alert-error>
+
+  <jhi-alert></jhi-alert>
+
+  <div class="alert alert-warning" id="no-result" *ngIf="mensajes?.length === 0">
+    <span jhiTranslate="jhLogstashApp.mensaje.home.notFound">__jhiTransformTranslate__('jhLogstashApp.mensaje.home.notFound')</span>
+  </div>
+
+  <div class="table-responsive table-entities" id="entities" *ngIf="mensajes && mensajes.length > 0">
+    <table class="table table-striped" aria-describedby="page-heading">
+      <thead>
+        <tr jhiSort [(predicate)]="predicate" [(ascending)]="ascending" (sortChange)="navigateToWithComponentValues()">
+          <th scope="col" jhiSortBy="id">
+            <div class="d-flex">
+              <span jhiTranslate="global.field.id">__jhiTransformTranslate__('global.field.id')</span>
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col" jhiSortBy="autor">
+            <div class="d-flex">
+              <span jhiTranslate="jhLogstashApp.mensaje.autor">__jhiTransformTranslate__('jhLogstashApp.mensaje.autor')</span>
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col" jhiSortBy="fechaPublicacion">
+            <div class="d-flex">
+              <span jhiTranslate="jhLogstashApp.mensaje.fechaPublicacion"
+                >__jhiTransformTranslate__('jhLogstashApp.mensaje.fechaPublicacion')</span
+              >
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col" jhiSortBy="textoMensaje">
+            <div class="d-flex">
+              <span jhiTranslate="jhLogstashApp.mensaje.textoMensaje">__jhiTransformTranslate__('jhLogstashApp.mensaje.textoMensaje')</span>
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col" jhiSortBy="etiquetas">
+            <div class="d-flex">
+              <span jhiTranslate="jhLogstashApp.mensaje.etiquetas">__jhiTransformTranslate__('jhLogstashApp.mensaje.etiquetas')</span>
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col" jhiSortBy="autor.id">
+            <div class="d-flex">
+              <span jhiTranslate="jhLogstashApp.mensaje.autor">__jhiTransformTranslate__('jhLogstashApp.mensaje.autor')</span>
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col" jhiSortBy="etiquetas.id">
+            <div class="d-flex">
+              <span jhiTranslate="jhLogstashApp.mensaje.etiquetas">__jhiTransformTranslate__('jhLogstashApp.mensaje.etiquetas')</span>
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let mensaje of mensajes; trackBy: trackId" data-cy="entityTable">
+          <td>
+            <a [routerLink]="['/mensaje', mensaje.id, 'view']">{{ mensaje.id }}</a>
+          </td>
+          <td>{{ mensaje.autor }}</td>
+          <td>{{ mensaje.fechaPublicacion | formatMediumDatetime }}</td>
+          <td>{{ mensaje.textoMensaje }}</td>
+          <td>{{ mensaje.etiquetas }}</td>
+          <td>
+            <div *ngIf="mensaje.autor">
+              <a [routerLink]="['/usuario', mensaje.autor.id, 'view']">{{ mensaje.autor.id }}</a>
+            </div>
+          </td>
+          <td>
+            <span *ngFor="let etiquetas of mensaje.etiquetas; let last = last">
+              <a class="form-control-static" [routerLink]="['/etiqueta', etiquetas.id, 'view']">{{ etiquetas.id }}</a
+              >{{ last ? '' : ', ' }}
+            </span>
+          </td>
+          <td class="text-end">
+            <div class="btn-group">
+              <button
+                type="submit"
+                [routerLink]="['/mensaje', mensaje.id, 'view']"
+                class="btn btn-info btn-sm"
+                data-cy="entityDetailsButton"
+              >
+                <fa-icon icon="eye"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">__jhiTransformTranslate__('entity.action.view')</span>
+              </button>
+
+              <button
+                type="submit"
+                [routerLink]="['/mensaje', mensaje.id, 'edit']"
+                class="btn btn-primary btn-sm"
+                data-cy="entityEditButton"
+              >
+                <fa-icon icon="pencil-alt"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">__jhiTransformTranslate__('entity.action.edit')</span>
+              </button>
+
+              <button type="submit" (click)="delete(mensaje)" class="btn btn-danger btn-sm" data-cy="entityDeleteButton">
+                <fa-icon icon="times"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.delete"
+                  >__jhiTransformTranslate__('entity.action.delete')</span
+                >
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

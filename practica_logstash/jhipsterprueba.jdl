@@ -1,0 +1,56 @@
+
+application {
+	config {
+		baseName microblog
+		applicationType monolith
+		packageName um.ing_soft
+		authenticationType jwt
+		prodDatabaseType mariadb
+		clientFramework angularX
+		testFrameworks [cypress]
+		buildTool maven
+	}
+  entities *
+}
+
+
+entity Mensaje {
+	texto String
+	fecha LocalDate
+}
+
+entity Usuario {
+	alias String
+    nombre String
+    correo String
+    contrasenia String
+    descripcion String
+    admin Boolean
+}
+
+entity MensajePrivado {
+	texto String
+	fecha LocalDate
+}
+
+relationship OneToOne {
+	// Publicar mensaje
+	Mensaje{autor(alias)} to Usuario{mensajePublicado}
+
+	// Enviar mensaje privado
+	MensajePrivado{autor(alias)} to Usuario{mensajePrivadoEnviado}
+
+	// Recibir mensaje privado
+	MensajePrivado{destino(alias)} to Usuario{mensajePrivadoRecibido}
+
+}
+
+relationship OneToMany {
+	// Mencionar en un mensaje
+	Mensaje{menciones} to Usuario{mensajeMencionado}
+}
+
+relationship ManyToMany {
+	// Seguidores y seguidos de usuario
+	Usuario{siguiendo} to Usuario{seguidores}
+}

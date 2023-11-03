@@ -1,0 +1,42 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="mensaje">
+      <h2 data-cy="mensajeDetailsHeading"><span jhiTranslate="microblogApp.mensaje.detail.title">Mensaje</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ mensaje.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="microblogApp.mensaje.texto">Texto</span></dt>
+        <dd>
+          <span>{{ mensaje.texto }}</span>
+        </dd>
+        <dt><span jhiTranslate="microblogApp.mensaje.fecha">Fecha</span></dt>
+        <dd>
+          <span>{{ mensaje.fecha | formatMediumDate }}</span>
+        </dd>
+        <dt><span jhiTranslate="microblogApp.mensaje.autor">Autor</span></dt>
+        <dd>
+          <div *ngIf="mensaje.autor">
+            <a [routerLink]="['/usuario', mensaje.autor.id, 'view']">{{ mensaje.autor.alias }}</a>
+          </div>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/mensaje', mensaje.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

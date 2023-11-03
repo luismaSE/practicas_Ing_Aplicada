@@ -1,0 +1,22 @@
+{
+  "applications": "*",
+  "changelogDate": "20231026164156",
+  "entityTableName": "muro_usuario",
+  "fields": [
+    {
+      "fieldName": "usuario",
+      "fieldType": "String"
+    }
+  ],
+  "name": "MuroUsuario",
+  "relationships": [
+    {
+      "otherEntityName": "usuario",
+      "otherEntityRelationshipName": "muro",
+      "relationshipName": "usuario",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

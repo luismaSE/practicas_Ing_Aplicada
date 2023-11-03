@@ -1,0 +1,177 @@
+<div>
+  <h2 id="page-heading" data-cy="UsuarioHeading">
+    <span jhiTranslate="jhLogstashApp.usuario.home.title">__jhiTransformTranslate__('jhLogstashApp.usuario.home.title')</span>
+
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-info me-2" (click)="load()" [disabled]="isLoading">
+        <fa-icon icon="sync" [spin]="isLoading"></fa-icon>
+        <span jhiTranslate="jhLogstashApp.usuario.home.refreshListLabel"
+          >__jhiTransformTranslate__('jhLogstashApp.usuario.home.refreshListLabel')</span
+        >
+      </button>
+
+      <button
+        id="jh-create-entity"
+        data-cy="entityCreateButton"
+        class="btn btn-primary jh-create-entity create-usuario"
+        [routerLink]="['/usuario/new']"
+      >
+        <fa-icon icon="plus"></fa-icon>
+        <span jhiTranslate="jhLogstashApp.usuario.home.createLabel"
+          >__jhiTransformTranslate__('jhLogstashApp.usuario.home.createLabel')</span
+        >
+      </button>
+    </div>
+  </h2>
+
+  <jhi-alert-error></jhi-alert-error>
+
+  <jhi-alert></jhi-alert>
+
+  <div class="alert alert-warning" id="no-result" *ngIf="usuarios?.length === 0">
+    <span jhiTranslate="jhLogstashApp.usuario.home.notFound">__jhiTransformTranslate__('jhLogstashApp.usuario.home.notFound')</span>
+  </div>
+
+  <div class="table-responsive table-entities" id="entities" *ngIf="usuarios && usuarios.length > 0">
+    <table class="table table-striped" aria-describedby="page-heading">
+      <thead>
+        <tr jhiSort [(predicate)]="predicate" [(ascending)]="ascending" (sortChange)="navigateToWithComponentValues()">
+          <th scope="col" jhiSortBy="id">
+            <div class="d-flex">
+              <span jhiTranslate="global.field.id">__jhiTransformTranslate__('global.field.id')</span>
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col" jhiSortBy="nombreUsuario">
+            <div class="d-flex">
+              <span jhiTranslate="jhLogstashApp.usuario.nombreUsuario"
+                >__jhiTransformTranslate__('jhLogstashApp.usuario.nombreUsuario')</span
+              >
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col" jhiSortBy="correo">
+            <div class="d-flex">
+              <span jhiTranslate="jhLogstashApp.usuario.correo">__jhiTransformTranslate__('jhLogstashApp.usuario.correo')</span>
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col" jhiSortBy="clave">
+            <div class="d-flex">
+              <span jhiTranslate="jhLogstashApp.usuario.clave">__jhiTransformTranslate__('jhLogstashApp.usuario.clave')</span>
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col" jhiSortBy="nombreCompleto">
+            <div class="d-flex">
+              <span jhiTranslate="jhLogstashApp.usuario.nombreCompleto"
+                >__jhiTransformTranslate__('jhLogstashApp.usuario.nombreCompleto')</span
+              >
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col" jhiSortBy="descripcion">
+            <div class="d-flex">
+              <span jhiTranslate="jhLogstashApp.usuario.descripcion">__jhiTransformTranslate__('jhLogstashApp.usuario.descripcion')</span>
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col" jhiSortBy="seguidos">
+            <div class="d-flex">
+              <span jhiTranslate="jhLogstashApp.usuario.seguidos">__jhiTransformTranslate__('jhLogstashApp.usuario.seguidos')</span>
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col" jhiSortBy="seguidores">
+            <div class="d-flex">
+              <span jhiTranslate="jhLogstashApp.usuario.seguidores">__jhiTransformTranslate__('jhLogstashApp.usuario.seguidores')</span>
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col" jhiSortBy="muro">
+            <div class="d-flex">
+              <span jhiTranslate="jhLogstashApp.usuario.muro">__jhiTransformTranslate__('jhLogstashApp.usuario.muro')</span>
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col" jhiSortBy="mensajes">
+            <div class="d-flex">
+              <span jhiTranslate="jhLogstashApp.usuario.mensajes">__jhiTransformTranslate__('jhLogstashApp.usuario.mensajes')</span>
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col" jhiSortBy="muro.id">
+            <div class="d-flex">
+              <span jhiTranslate="jhLogstashApp.usuario.muro">__jhiTransformTranslate__('jhLogstashApp.usuario.muro')</span>
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col" jhiSortBy="seguidos.id">
+            <div class="d-flex">
+              <span jhiTranslate="jhLogstashApp.usuario.seguidos">__jhiTransformTranslate__('jhLogstashApp.usuario.seguidos')</span>
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let usuario of usuarios; trackBy: trackId" data-cy="entityTable">
+          <td>
+            <a [routerLink]="['/usuario', usuario.id, 'view']">{{ usuario.id }}</a>
+          </td>
+          <td>{{ usuario.nombreUsuario }}</td>
+          <td>{{ usuario.correo }}</td>
+          <td>{{ usuario.clave }}</td>
+          <td>{{ usuario.nombreCompleto }}</td>
+          <td>{{ usuario.descripcion }}</td>
+          <td>{{ usuario.seguidos }}</td>
+          <td>{{ usuario.seguidores }}</td>
+          <td>{{ usuario.muro }}</td>
+          <td>{{ usuario.mensajes }}</td>
+          <td>
+            <div *ngIf="usuario.muro">
+              <a [routerLink]="['/muro-usuario', usuario.muro.id, 'view']">{{ usuario.muro.id }}</a>
+            </div>
+          </td>
+          <td>
+            <span *ngFor="let seguidos of usuario.seguidos; let last = last">
+              <a class="form-control-static" [routerLink]="['/usuario', seguidos.id, 'view']">{{ seguidos.id }}</a
+              >{{ last ? '' : ', ' }}
+            </span>
+          </td>
+          <td class="text-end">
+            <div class="btn-group">
+              <button
+                type="submit"
+                [routerLink]="['/usuario', usuario.id, 'view']"
+                class="btn btn-info btn-sm"
+                data-cy="entityDetailsButton"
+              >
+                <fa-icon icon="eye"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">__jhiTransformTranslate__('entity.action.view')</span>
+              </button>
+
+              <button
+                type="submit"
+                [routerLink]="['/usuario', usuario.id, 'edit']"
+                class="btn btn-primary btn-sm"
+                data-cy="entityEditButton"
+              >
+                <fa-icon icon="pencil-alt"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">__jhiTransformTranslate__('entity.action.edit')</span>
+              </button>
+
+              <button type="submit" (click)="delete(usuario)" class="btn btn-danger btn-sm" data-cy="entityDeleteButton">
+                <fa-icon icon="times"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.delete"
+                  >__jhiTransformTranslate__('entity.action.delete')</span
+                >
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

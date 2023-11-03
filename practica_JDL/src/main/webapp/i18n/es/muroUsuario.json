@@ -1,0 +1,25 @@
+{
+  "jhLogstashApp": {
+    "muroUsuario": {
+      "home": {
+        "title": "Muro Usuarios",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Muro Usuario",
+        "createOrEditLabel": "Crear o editar Muro Usuario",
+        "notFound": "Ningún Muro Usuarios encontrado"
+      },
+      "created": "Un nuevo Muro Usuario ha sido creado con el identificador {{ param }}",
+      "updated": "Un Muro Usuario ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Muro Usuario ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Muro Usuario {{ id }}?"
+      },
+      "detail": {
+        "title": "Muro Usuario"
+      },
+      "id": "ID",
+      "usuario": "Usuario",
+      "usuario": "Usuario"
+    }
+  }
+}

@@ -1,0 +1,89 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="usuario">
+      <h2 data-cy="usuarioDetailsHeading">
+        <span jhiTranslate="jhLogstashApp.usuario.detail.title">__jhiTransformTranslate__('jhLogstashApp.usuario.detail.title')</span>
+      </h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">__jhiTransformTranslate__('global.field.id')</span></dt>
+        <dd>
+          <span>{{ usuario.id }}</span>
+        </dd>
+        <dt>
+          <span jhiTranslate="jhLogstashApp.usuario.nombreUsuario">__jhiTransformTranslate__('jhLogstashApp.usuario.nombreUsuario')</span>
+        </dt>
+        <dd>
+          <span>{{ usuario.nombreUsuario }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhLogstashApp.usuario.correo">__jhiTransformTranslate__('jhLogstashApp.usuario.correo')</span></dt>
+        <dd>
+          <span>{{ usuario.correo }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhLogstashApp.usuario.clave">__jhiTransformTranslate__('jhLogstashApp.usuario.clave')</span></dt>
+        <dd>
+          <span>{{ usuario.clave }}</span>
+        </dd>
+        <dt>
+          <span jhiTranslate="jhLogstashApp.usuario.nombreCompleto">__jhiTransformTranslate__('jhLogstashApp.usuario.nombreCompleto')</span>
+        </dt>
+        <dd>
+          <span>{{ usuario.nombreCompleto }}</span>
+        </dd>
+        <dt>
+          <span jhiTranslate="jhLogstashApp.usuario.descripcion">__jhiTransformTranslate__('jhLogstashApp.usuario.descripcion')</span>
+        </dt>
+        <dd>
+          <span>{{ usuario.descripcion }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhLogstashApp.usuario.seguidos">__jhiTransformTranslate__('jhLogstashApp.usuario.seguidos')</span></dt>
+        <dd>
+          <span>{{ usuario.seguidos }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhLogstashApp.usuario.seguidores">__jhiTransformTranslate__('jhLogstashApp.usuario.seguidores')</span></dt>
+        <dd>
+          <span>{{ usuario.seguidores }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhLogstashApp.usuario.muro">__jhiTransformTranslate__('jhLogstashApp.usuario.muro')</span></dt>
+        <dd>
+          <span>{{ usuario.muro }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhLogstashApp.usuario.mensajes">__jhiTransformTranslate__('jhLogstashApp.usuario.mensajes')</span></dt>
+        <dd>
+          <span>{{ usuario.mensajes }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhLogstashApp.usuario.muro">__jhiTransformTranslate__('jhLogstashApp.usuario.muro')</span></dt>
+        <dd>
+          <div *ngIf="usuario.muro">
+            <a [routerLink]="['/muro-usuario', usuario.muro.id, 'view']">{{ usuario.muro.id }}</a>
+          </div>
+        </dd>
+        <dt><span jhiTranslate="jhLogstashApp.usuario.seguidos">__jhiTransformTranslate__('jhLogstashApp.usuario.seguidos')</span></dt>
+        <dd>
+          <span *ngFor="let seguidos of usuario.seguidos; let last = last">
+            <a [routerLink]="['/usuario', seguidos.id, 'view']">{{ seguidos.id }}</a
+            >{{ last ? '' : ', ' }}
+          </span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"
+          >__jhiTransformTranslate__('entity.action.back')</span
+        >
+      </button>
+
+      <button type="button" [routerLink]="['/usuario', usuario.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"
+          >__jhiTransformTranslate__('entity.action.edit')</span
+        >
+      </button>
+    </div>
+  </div>
+</div>

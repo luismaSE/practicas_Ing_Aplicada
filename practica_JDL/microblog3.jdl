@@ -1,0 +1,52 @@
+
+entity Usuario {
+  nombreUsuario String required
+  correo String
+  clave String
+  nombreCompleto String
+  descripcion String
+  seguidos String
+  seguidores Integer
+  muro String
+  mensajes String
+}
+
+entity Mensaje {
+  autor String
+  fechaPublicacion ZonedDateTime
+  textoMensaje String
+  etiquetas String
+}
+
+entity Etiqueta {
+  nombreEtiqueta String
+  mensajes String
+}
+
+entity TablonDeAnuncios {}
+
+entity MuroUsuario {
+  usuario String
+}
+
+entity TemaDelMomento {
+  etiqueta String
+  numeroRepeticiones Integer
+}
+
+relationship OneToOne {
+  Usuario{muro} to MuroUsuario{usuario}
+}
+
+relationship ManyToOne {
+  Mensaje{autor} to Usuario{mensajes}
+}
+
+relationship ManyToMany {
+  Usuario{seguidos} to Usuario{seguidores}
+  Mensaje{etiquetas} to Etiqueta{mensajes}
+}
+
+
+
+

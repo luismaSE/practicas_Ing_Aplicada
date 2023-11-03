@@ -1,0 +1,29 @@
+{
+  "jhLogstashApp": {
+    "mensaje": {
+      "home": {
+        "title": "Mensajes",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Mensaje",
+        "createOrEditLabel": "Créer ou éditer un Mensaje",
+        "notFound": "Aucun Mensaje trouvé"
+      },
+      "created": "Un nouveau Mensaje a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Mensaje avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Mensaje avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Mensaje {{ id }} ?"
+      },
+      "detail": {
+        "title": "Mensaje"
+      },
+      "id": "ID",
+      "autor": "Autor",
+      "fechaPublicacion": "Fecha Publicacion",
+      "textoMensaje": "Texto Mensaje",
+      "etiquetas": "Etiquetas",
+      "autor": "Autor",
+      "etiquetas": "Etiquetas"
+    }
+  }
+}

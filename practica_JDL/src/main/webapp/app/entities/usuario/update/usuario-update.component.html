@@ -1,0 +1,150 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <form name="editForm" role="form" novalidate (ngSubmit)="save()" [formGroup]="editForm">
+      <h2 id="jhi-usuario-heading" data-cy="UsuarioCreateUpdateHeading" jhiTranslate="jhLogstashApp.usuario.home.createOrEditLabel">
+        __jhiTransformTranslate__('jhLogstashApp.usuario.home.createOrEditLabel')
+      </h2>
+
+      <div>
+        <jhi-alert-error></jhi-alert-error>
+
+        <div class="mb-3" *ngIf="editForm.controls.id.value !== null">
+          <label class="form-label" jhiTranslate="global.field.id" for="field_id">ID</label>
+          <input type="number" class="form-control" name="id" id="field_id" data-cy="id" formControlName="id" [readonly]="true" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="jhLogstashApp.usuario.nombreUsuario" for="field_nombreUsuario">Nombre Usuario</label>
+          <input
+            type="text"
+            class="form-control"
+            name="nombreUsuario"
+            id="field_nombreUsuario"
+            data-cy="nombreUsuario"
+            formControlName="nombreUsuario"
+          />
+          <div
+            *ngIf="
+              editForm.get('nombreUsuario')!.invalid && (editForm.get('nombreUsuario')!.dirty || editForm.get('nombreUsuario')!.touched)
+            "
+          >
+            <small
+              class="form-text text-danger"
+              *ngIf="editForm.get('nombreUsuario')?.errors?.required"
+              jhiTranslate="entity.validation.required"
+              >__jhiTransformTranslate__('entity.validation.required')</small
+            >
+          </div>
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="jhLogstashApp.usuario.correo" for="field_correo">Correo</label>
+          <input type="text" class="form-control" name="correo" id="field_correo" data-cy="correo" formControlName="correo" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="jhLogstashApp.usuario.clave" for="field_clave">Clave</label>
+          <input type="text" class="form-control" name="clave" id="field_clave" data-cy="clave" formControlName="clave" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="jhLogstashApp.usuario.nombreCompleto" for="field_nombreCompleto">Nombre Completo</label>
+          <input
+            type="text"
+            class="form-control"
+            name="nombreCompleto"
+            id="field_nombreCompleto"
+            data-cy="nombreCompleto"
+            formControlName="nombreCompleto"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="jhLogstashApp.usuario.descripcion" for="field_descripcion">Descripcion</label>
+          <input
+            type="text"
+            class="form-control"
+            name="descripcion"
+            id="field_descripcion"
+            data-cy="descripcion"
+            formControlName="descripcion"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="jhLogstashApp.usuario.seguidos" for="field_seguidos">Seguidos</label>
+          <input type="text" class="form-control" name="seguidos" id="field_seguidos" data-cy="seguidos" formControlName="seguidos" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="jhLogstashApp.usuario.seguidores" for="field_seguidores">Seguidores</label>
+          <input
+            type="number"
+            class="form-control"
+            name="seguidores"
+            id="field_seguidores"
+            data-cy="seguidores"
+            formControlName="seguidores"
+          />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="jhLogstashApp.usuario.muro" for="field_muro">Muro</label>
+          <input type="text" class="form-control" name="muro" id="field_muro" data-cy="muro" formControlName="muro" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="jhLogstashApp.usuario.mensajes" for="field_mensajes">Mensajes</label>
+          <input type="text" class="form-control" name="mensajes" id="field_mensajes" data-cy="mensajes" formControlName="mensajes" />
+        </div>
+
+        <div class="mb-3">
+          <label class="form-label" jhiTranslate="jhLogstashApp.usuario.muro" for="field_muro"
+            >__jhiTransformTranslate__('jhLogstashApp.usuario.muro')</label
+          >
+          <select class="form-control" id="field_muro" data-cy="muro" name="muro" formControlName="muro" [compareWith]="compareMuroUsuario">
+            <option [ngValue]="null"></option>
+            <option [ngValue]="muroUsuarioOption" *ngFor="let muroUsuarioOption of murosCollection">{{ muroUsuarioOption.id }}</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label jhiTranslate="jhLogstashApp.usuario.seguidos" for="field_seguidos"
+            >__jhiTransformTranslate__('jhLogstashApp.usuario.seguidos')</label
+          >
+          <select
+            class="form-control"
+            id="field_seguidos"
+            data-cy="seguidos"
+            multiple
+            name="seguidos"
+            formControlName="seguidos"
+            [compareWith]="compareUsuario"
+          >
+            <option [ngValue]="usuarioOption" *ngFor="let usuarioOption of usuariosSharedCollection">{{ usuarioOption.id }}</option>
+          </select>
+        </div>
+      </div>
+
+      <div>
+        <button type="button" id="cancel-save" data-cy="entityCreateCancelButton" class="btn btn-secondary" (click)="previousState()">
+          <fa-icon icon="ban"></fa-icon>&nbsp;<span jhiTranslate="entity.action.cancel"
+            >__jhiTransformTranslate__('entity.action.cancel')</span
+          >
+        </button>
+
+        <button
+          type="submit"
+          id="save-entity"
+          data-cy="entityCreateSaveButton"
+          [disabled]="editForm.invalid || isSaving"
+          class="btn btn-primary"
+        >
+          <fa-icon icon="save"></fa-icon>&nbsp;<span jhiTranslate="entity.action.save"
+            >__jhiTransformTranslate__('entity.action.save')</span
+          >
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

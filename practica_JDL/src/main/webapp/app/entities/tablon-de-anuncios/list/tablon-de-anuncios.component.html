@@ -1,0 +1,91 @@
+<div>
+  <h2 id="page-heading" data-cy="TablonDeAnunciosHeading">
+    <span jhiTranslate="jhLogstashApp.tablonDeAnuncios.home.title"
+      >__jhiTransformTranslate__('jhLogstashApp.tablonDeAnuncios.home.title')</span
+    >
+
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-info me-2" (click)="load()" [disabled]="isLoading">
+        <fa-icon icon="sync" [spin]="isLoading"></fa-icon>
+        <span jhiTranslate="jhLogstashApp.tablonDeAnuncios.home.refreshListLabel"
+          >__jhiTransformTranslate__('jhLogstashApp.tablonDeAnuncios.home.refreshListLabel')</span
+        >
+      </button>
+
+      <button
+        id="jh-create-entity"
+        data-cy="entityCreateButton"
+        class="btn btn-primary jh-create-entity create-tablon-de-anuncios"
+        [routerLink]="['/tablon-de-anuncios/new']"
+      >
+        <fa-icon icon="plus"></fa-icon>
+        <span jhiTranslate="jhLogstashApp.tablonDeAnuncios.home.createLabel"
+          >__jhiTransformTranslate__('jhLogstashApp.tablonDeAnuncios.home.createLabel')</span
+        >
+      </button>
+    </div>
+  </h2>
+
+  <jhi-alert-error></jhi-alert-error>
+
+  <jhi-alert></jhi-alert>
+
+  <div class="alert alert-warning" id="no-result" *ngIf="tablonDeAnuncios?.length === 0">
+    <span jhiTranslate="jhLogstashApp.tablonDeAnuncios.home.notFound"
+      >__jhiTransformTranslate__('jhLogstashApp.tablonDeAnuncios.home.notFound')</span
+    >
+  </div>
+
+  <div class="table-responsive table-entities" id="entities" *ngIf="tablonDeAnuncios && tablonDeAnuncios.length > 0">
+    <table class="table table-striped" aria-describedby="page-heading">
+      <thead>
+        <tr jhiSort [(predicate)]="predicate" [(ascending)]="ascending" (sortChange)="navigateToWithComponentValues()">
+          <th scope="col" jhiSortBy="id">
+            <div class="d-flex">
+              <span jhiTranslate="global.field.id">__jhiTransformTranslate__('global.field.id')</span>
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let tablonDeAnuncios of tablonDeAnuncios; trackBy: trackId" data-cy="entityTable">
+          <td>
+            <a [routerLink]="['/tablon-de-anuncios', tablonDeAnuncios.id, 'view']">{{ tablonDeAnuncios.id }}</a>
+          </td>
+          <td class="text-end">
+            <div class="btn-group">
+              <button
+                type="submit"
+                [routerLink]="['/tablon-de-anuncios', tablonDeAnuncios.id, 'view']"
+                class="btn btn-info btn-sm"
+                data-cy="entityDetailsButton"
+              >
+                <fa-icon icon="eye"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">__jhiTransformTranslate__('entity.action.view')</span>
+              </button>
+
+              <button
+                type="submit"
+                [routerLink]="['/tablon-de-anuncios', tablonDeAnuncios.id, 'edit']"
+                class="btn btn-primary btn-sm"
+                data-cy="entityEditButton"
+              >
+                <fa-icon icon="pencil-alt"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">__jhiTransformTranslate__('entity.action.edit')</span>
+              </button>
+
+              <button type="submit" (click)="delete(tablonDeAnuncios)" class="btn btn-danger btn-sm" data-cy="entityDeleteButton">
+                <fa-icon icon="times"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.delete"
+                  >__jhiTransformTranslate__('entity.action.delete')</span
+                >
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

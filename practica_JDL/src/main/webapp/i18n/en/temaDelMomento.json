@@ -1,0 +1,25 @@
+{
+  "jhLogstashApp": {
+    "temaDelMomento": {
+      "home": {
+        "title": "Tema Del Momentos",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Tema Del Momento",
+        "createOrEditLabel": "Create or edit a Tema Del Momento",
+        "notFound": "No Tema Del Momentos found"
+      },
+      "created": "A new Tema Del Momento is created with identifier {{ param }}",
+      "updated": "A Tema Del Momento is updated with identifier {{ param }}",
+      "deleted": "A Tema Del Momento is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Tema Del Momento {{ id }}?"
+      },
+      "detail": {
+        "title": "Tema Del Momento"
+      },
+      "id": "ID",
+      "etiqueta": "Etiqueta",
+      "numeroRepeticiones": "Numero Repeticiones"
+    }
+  }
+}

@@ -1,0 +1,492 @@
+1698515658251	geckodriver	INFO	Listening on 127.0.0.1:42185
+1698515658877	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "37521" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileX9CoBy"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+(firefox:10860): Gtk-WARNING **: 14:54:19.399: Theme directory actions/16-Dark of theme Zafiro-Icons-Dark-Blue-f has no size field
+
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698515659778	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698515659914	Marionette	INFO	Listening on port 46245
+WebDriver BiDi listening on ws://127.0.0.1:37521
+Read port: 46245
+1698515660153	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:37521/devtools/browser/abc19a11-46bc-4daf-a776-14b984015c30
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://biblioteca.um.edu.ar."
+1698515667064	Marionette	INFO	Stopped listening on port 46245
+1698515688883	geckodriver	INFO	Listening on 127.0.0.1:58199
+1698515688975	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "54279" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile9x1g6S"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+(firefox:11313): Gtk-WARNING **: 14:54:49.446: Theme directory actions/16-Dark of theme Zafiro-Icons-Dark-Blue-f has no size field
+
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698515689787	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698515689921	Marionette	INFO	Listening on port 45119
+WebDriver BiDi listening on ws://127.0.0.1:54279
+Read port: 45119
+1698515690152	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:54279/devtools/browser/784f142b-c659-4c72-b1d1-c87f898f4ad9
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://biblioteca.um.edu.ar."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://biblioteca.um.edu.ar."
+1698515697832	Marionette	INFO	Stopped listening on port 45119
+1698516252152	geckodriver	INFO	Listening on 127.0.0.1:42303
+1698516252235	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "51357" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile1S5bwJ"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+(firefox:13990): Gtk-WARNING **: 15:04:12.754: Theme directory actions/16-Dark of theme Zafiro-Icons-Dark-Blue-f has no size field
+
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698516253098	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698516253228	Marionette	INFO	Listening on port 41119
+Read port: 41119
+WebDriver BiDi listening on ws://127.0.0.1:51357
+1698516253324	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:51357/devtools/browser/8af66b77-748d-4488-9d93-c3312e6426a6
+1698516263884	Marionette	INFO	Stopped listening on port 41119
+JavaScript warning: https://virtual.um.edu.ar/lib/javascript.php/1681130965/lib/requirejs/require.min.js, line 5: Script terminated by timeout at:
+requirejs@https://virtual.um.edu.ar/lib/javascript.php/1681130965/lib/requirejs/require.min.js:5:14539
+o/m</<@https://virtual.um.edu.ar/lib/requirejs.php/1681130965/core/first.js:7:2186
+o/m<@https://virtual.um.edu.ar/lib/requirejs.php/1681130965/core/first.js:7:2158
+
+1698516321588	geckodriver	INFO	Listening on 127.0.0.1:52205
+1698516321666	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "59591" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilejCHf7z"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+(firefox:14529): Gtk-WARNING **: 15:05:22.150: Theme directory actions/16-Dark of theme Zafiro-Icons-Dark-Blue-f has no size field
+
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698516322497	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698516322640	Marionette	INFO	Listening on port 36863
+WebDriver BiDi listening on ws://127.0.0.1:59591
+Read port: 36863
+1698516322888	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+1698516325685	Marionette	INFO	Stopped listening on port 36863
+1698516325706	CDP	WARN	Failed to remove undefined (Could not parse path (undefined): NS_ERROR_FILE_UNRECOGNIZED_PATH)
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1698516329174	geckodriver	INFO	Listening on 127.0.0.1:57297
+1698516329297	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "46651" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilebkNgZY"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+(firefox:14914): Gtk-WARNING **: 15:05:29.742: Theme directory actions/16-Dark of theme Zafiro-Icons-Dark-Blue-f has no size field
+
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698516330088	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698516330222	Marionette	INFO	Listening on port 44529
+WebDriver BiDi listening on ws://127.0.0.1:46651
+Read port: 44529
+1698516330462	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:46651/devtools/browser/b1c06c70-bffb-4c1f-b81d-f3a569afa9cf
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://virtual.um.edu.ar."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://virtual.um.edu.ar."
+1698516342315	Marionette	INFO	Stopped listening on port 44529
+JavaScript warning: https://virtual.um.edu.ar/lib/javascript.php/1681130965/lib/requirejs/require.min.js, line 5: Script terminated by timeout at:
+eachProp@https://virtual.um.edu.ar/lib/javascript.php/1681130965/lib/requirejs/require.min.js:5:532
+l@https://virtual.um.edu.ar/lib/javascript.php/1681130965/lib/requirejs/require.min.js:5:3792
+newContext/l/w<@https://virtual.um.edu.ar/lib/javascript.php/1681130965/lib/requirejs/require.min.js:5:4221
+
+1698516552612	geckodriver	INFO	Listening on 127.0.0.1:34855
+1698516552703	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "52571" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile3DHkZW"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+(firefox:16078): Gtk-WARNING **: 15:09:13.220: Theme directory actions/16-Dark of theme Zafiro-Icons-Dark-Blue-f has no size field
+
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698516553590	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698516553720	Marionette	INFO	Listening on port 42299
+WebDriver BiDi listening on ws://127.0.0.1:52571
+Read port: 42299
+1698516553962	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:52571/devtools/browser/e71f453a-f7fb-424a-88af-454b40390dc8
+1698516563326	Marionette	INFO	Stopped listening on port 42299
+1698516599672	geckodriver	INFO	Listening on 127.0.0.1:38157
+1698516599801	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "44309" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofiledVBwqT"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+(firefox:16574): Gtk-WARNING **: 15:10:00.275: Theme directory actions/16-Dark of theme Zafiro-Icons-Dark-Blue-f has no size field
+
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698516600587	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698516600712	Marionette	INFO	Listening on port 34563
+WebDriver BiDi listening on ws://127.0.0.1:44309
+Read port: 34563
+1698516600951	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:44309/devtools/browser/36cdb48d-11b0-4d6c-b12e-6f8afe4ffd7b
+JavaScript error: https://um.edu.ar/wp-content/themes/um/js/navigation.js?ver=1.0.0, line 101: TypeError: $ is not a function
+1698516606448	Marionette	INFO	Stopped listening on port 34563
+JavaScript warning: https://um.edu.ar/wp-includes/js/jquery/jquery.min.js?ver=3.7.0, line 2: Script terminated by timeout at:
+dispatch@https://um.edu.ar/wp-includes/js/jquery/jquery.min.js?ver=3.7.0:2:39376
+add/v.handle@https://um.edu.ar/wp-includes/js/jquery/jquery.min.js?ver=3.7.0:2:37968
+
+1698516643010	geckodriver	INFO	Listening on 127.0.0.1:33851
+1698516643096	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "36819" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileXjS0Ur"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+(firefox:17033): Gtk-WARNING **: 15:10:43.554: Theme directory actions/16-Dark of theme Zafiro-Icons-Dark-Blue-f has no size field
+
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698516643902	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698516644031	Marionette	INFO	Listening on port 35723
+WebDriver BiDi listening on ws://127.0.0.1:36819
+Read port: 35723
+1698516644263	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:36819/devtools/browser/d945e7f8-5fa8-40ec-afed-1d4f72092d78
+JavaScript error: https://um.edu.ar/wp-content/themes/um/js/navigation.js?ver=1.0.0, line 101: TypeError: $ is not a function
+1698516649999	Marionette	INFO	Stopped listening on port 35723
+JavaScript warning: https://um.edu.ar/wp-includes/js/jquery/jquery.min.js?ver=3.7.0, line 2: Script terminated by timeout at:
+dispatch@https://um.edu.ar/wp-includes/js/jquery/jquery.min.js?ver=3.7.0:2:39376
+add/v.handle@https://um.edu.ar/wp-includes/js/jquery/jquery.min.js?ver=3.7.0:2:37968
+
+1698516895560	geckodriver	INFO	Listening on 127.0.0.1:35791
+1698516895679	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "43251" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileWbqyIW"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+(firefox:17705): Gtk-WARNING **: 15:14:56.134: Theme directory actions/16-Dark of theme Zafiro-Icons-Dark-Blue-f has no size field
+
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698516896514	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698516896635	Marionette	INFO	Listening on port 38147
+WebDriver BiDi listening on ws://127.0.0.1:43251
+Read port: 38147
+1698516896866	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:43251/devtools/browser/1bb0cec2-9353-444a-823c-77e578c0cc54
+JavaScript error: https://um.edu.ar/wp-content/themes/um/js/navigation.js?ver=1.0.0, line 101: TypeError: $ is not a function
+1698516902257	Marionette	INFO	Stopped listening on port 38147
+JavaScript warning: https://um.edu.ar/wp-includes/js/jquery/jquery.min.js?ver=3.7.0, line 2: Script terminated by timeout at:
+dispatch@https://um.edu.ar/wp-includes/js/jquery/jquery.min.js?ver=3.7.0:2:39376
+add/v.handle@https://um.edu.ar/wp-includes/js/jquery/jquery.min.js?ver=3.7.0:2:37968
+
+1698516925294	geckodriver	INFO	Listening on 127.0.0.1:46671
+1698516925413	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "49849" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilewGkdeC"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+(firefox:18151): Gtk-WARNING **: 15:15:25.833: Theme directory actions/16-Dark of theme Zafiro-Icons-Dark-Blue-f has no size field
+
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698516926163	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698516926298	Marionette	INFO	Listening on port 41135
+WebDriver BiDi listening on ws://127.0.0.1:49849
+Read port: 41135
+1698516926390	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:49849/devtools/browser/a9940bde-a9ca-4756-8190-7d7560f2ec6e
+JavaScript error: https://um.edu.ar/wp-content/themes/um/js/navigation.js?ver=1.0.0, line 101: TypeError: $ is not a function
+1698516934664	Marionette	INFO	Stopped listening on port 41135
+JavaScript warning: https://um.edu.ar/wp-includes/js/jquery/jquery.min.js?ver=3.7.0, line 2: Script terminated by timeout at:
+dispatch@https://um.edu.ar/wp-includes/js/jquery/jquery.min.js?ver=3.7.0:2:39376
+add/v.handle@https://um.edu.ar/wp-includes/js/jquery/jquery.min.js?ver=3.7.0:2:37968
+
+1698516953253	geckodriver	INFO	Listening on 127.0.0.1:60937
+1698516953360	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "37951" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilegkwuvE"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+(firefox:18589): Gtk-WARNING **: 15:15:53.791: Theme directory actions/16-Dark of theme Zafiro-Icons-Dark-Blue-f has no size field
+
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698516954129	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698516954268	Marionette	INFO	Listening on port 35365
+WebDriver BiDi listening on ws://127.0.0.1:37951
+Read port: 35365
+1698516954512	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:37951/devtools/browser/947a5035-ccf5-4faa-8ecb-15585df5d902
+JavaScript error: https://um.edu.ar/wp-content/themes/um/js/navigation.js?ver=1.0.0, line 101: TypeError: $ is not a function
+1698516961222	Marionette	INFO	Stopped listening on port 35365
+JavaScript warning: https://um.edu.ar/wp-includes/js/jquery/jquery.min.js?ver=3.7.0, line 2: Script terminated by timeout at:
+dispatch@https://um.edu.ar/wp-includes/js/jquery/jquery.min.js?ver=3.7.0:2:39376
+add/v.handle@https://um.edu.ar/wp-includes/js/jquery/jquery.min.js?ver=3.7.0:2:37968
+
+1698517001799	geckodriver	INFO	Listening on 127.0.0.1:54849
+1698517001884	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "53231" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileY6ykU2"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+(firefox:19026): Gtk-WARNING **: 15:16:42.358: Theme directory actions/16-Dark of theme Zafiro-Icons-Dark-Blue-f has no size field
+
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698517002706	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698517002838	Marionette	INFO	Listening on port 36525
+WebDriver BiDi listening on ws://127.0.0.1:53231
+Read port: 36525
+1698517003079	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:53231/devtools/browser/26494813-1436-4d7c-8e37-57a36695b38b
+JavaScript error: https://um.edu.ar/wp-content/themes/um/js/navigation.js?ver=1.0.0, line 101: TypeError: $ is not a function
+1698517010359	Marionette	INFO	Stopped listening on port 36525
+JavaScript warning: https://um.edu.ar/wp-includes/js/jquery/jquery.min.js?ver=3.7.0, line 2: Script terminated by timeout at:
+dispatch@https://um.edu.ar/wp-includes/js/jquery/jquery.min.js?ver=3.7.0:2:39376
+add/v.handle@https://um.edu.ar/wp-includes/js/jquery/jquery.min.js?ver=3.7.0:2:37968
+
+1698517116206	geckodriver	INFO	Listening on 127.0.0.1:38843
+1698517116290	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "36689" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilebSyl3e"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+(firefox:19780): Gtk-WARNING **: 15:18:36.730: Theme directory actions/16-Dark of theme Zafiro-Icons-Dark-Blue-f has no size field
+
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698517117055	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698517117188	Marionette	INFO	Listening on port 39627
+Read port: 39627
+WebDriver BiDi listening on ws://127.0.0.1:36689
+1698517117272	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:36689/devtools/browser/20177db3-3458-4931-b634-f40df3a55e04
+JavaScript error: https://um.edu.ar/wp-content/themes/um/js/navigation.js?ver=1.0.0, line 101: TypeError: $ is not a function
+1698517128127	Marionette	INFO	Stopped listening on port 39627
+JavaScript warning: https://um.edu.ar/wp-includes/js/jquery/jquery.min.js?ver=3.7.0, line 2: Script terminated by timeout at:
+dispatch@https://um.edu.ar/wp-includes/js/jquery/jquery.min.js?ver=3.7.0:2:39376
+add/v.handle@https://um.edu.ar/wp-includes/js/jquery/jquery.min.js?ver=3.7.0:2:37968
+
+1698517165066	geckodriver	INFO	Listening on 127.0.0.1:53951
+1698517165157	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "52719" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofiledmV81p"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+(firefox:20255): Gtk-WARNING **: 15:19:25.632: Theme directory actions/16-Dark of theme Zafiro-Icons-Dark-Blue-f has no size field
+
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698517165992	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698517166125	Marionette	INFO	Listening on port 46123
+WebDriver BiDi listening on ws://127.0.0.1:52719
+Read port: 46123
+1698517166323	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:52719/devtools/browser/c5283f5f-0267-47d1-b61b-e5ae8bc169df
+JavaScript error: https://um.edu.ar/wp-content/themes/um/js/navigation.js?ver=1.0.0, line 101: TypeError: $ is not a function
+1698517179012	Marionette	INFO	Stopped listening on port 46123
+1698517217522	geckodriver	INFO	Listening on 127.0.0.1:60513
+1698517217610	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "42991" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofile6gIo8c"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+(firefox:20786): Gtk-WARNING **: 15:20:18.043: Theme directory actions/16-Dark of theme Zafiro-Icons-Dark-Blue-f has no size field
+
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698517218392	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698517218523	Marionette	INFO	Listening on port 36579
+WebDriver BiDi listening on ws://127.0.0.1:42991
+Read port: 36579
+1698517218770	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:42991/devtools/browser/a800d2b4-bfa1-40b1-a4ca-1b012d02fa7d
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://biblioteca.um.edu.ar."
+1698517225399	Marionette	INFO	Stopped listening on port 36579
+1698517265155	geckodriver	INFO	Listening on 127.0.0.1:38299
+1698517265260	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "37337" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileDWZF8l"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+(firefox:21618): Gtk-WARNING **: 15:21:05.777: Theme directory actions/16-Dark of theme Zafiro-Icons-Dark-Blue-f has no size field
+
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698517266124	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698517266259	Marionette	INFO	Listening on port 45621
+Read port: 45621
+WebDriver BiDi listening on ws://127.0.0.1:37337
+1698517266347	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:37337/devtools/browser/08e48a11-a462-460f-a059-c1791ca64aa8
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://biblioteca.um.edu.ar."
+1698517272706	Marionette	INFO	Stopped listening on port 45621
+JavaScript warning: https://biblioteca.um.edu.ar/opac-tmpl/bootstrap/lib/jquery/jquery-3.6.0.min_22.0504000.js, line 2: Script terminated by timeout at:
+xe@https://biblioteca.um.edu.ar/opac-tmpl/bootstrap/lib/jquery/jquery-3.6.0.min_22.0504000.js:2:39071
+He@https://biblioteca.um.edu.ar/opac-tmpl/bootstrap/lib/jquery/jquery-3.6.0.min_22.0504000.js:2:47896
+append@https://biblioteca.um.edu.ar/opac-tmpl/bootstrap/lib/jquery/jquery-3.6.0.min_22.0504000.js:2:49724
+_draw@https://biblioteca.um.edu.ar/opac-tmpl/lib/jquery/plugins/jquery.dataTables.min_22.0504000.js:191:375
+add@https://biblioteca.um.edu.ar/opac-tmpl/lib/jquery/plugins/jquery.dataTables.min_22.0504000.js:187:221
+_constructor@https://biblioteca.um.edu.ar/opac-tmpl/lib/jquery/plugins/jquery.dataTables.min_22.0504000.js:190:374
+l@https://biblioteca.um.edu.ar/opac-tmpl/lib/jquery/plugins/jquery.dataTables.min_22.0504000.js:186:213
+@https://biblioteca.um.edu.ar/opac-tmpl/lib/jquery/plugins/jquery.dataTables.min_22.0504000.js:220:97
+dispatch@https://biblioteca.um.edu.ar/opac-tmpl/bootstrap/lib/jquery/jquery-3.6.0.min_22.0504000.js:2:43064
+add/v.handle@https://biblioteca.um.edu.ar/opac-tmpl/bootstrap/lib/jquery/jquery-3.6.0.min_22.0504000.js:2:41048
+trigger@https://biblioteca.um.edu.ar/opac-tmpl/bootstrap/lib/jquery/jquery-3.6.0.min_22.0504000.js:2:71515
+trigger/<@https://biblioteca.um.edu.ar/opac-tmpl/bootstrap/lib/jquery/jquery-3.6.0.min_22.0504000.js:2:72110
+each@https://biblioteca.um.edu.ar/opac-tmpl/bootstrap/lib/jquery/jquery-3.6.0.min_22.0504000.js:2:3003
+each@https://biblioteca.um.edu.ar/opac-tmpl/bootstrap/lib/jquery/jquery-3.6.0.min_22.0504000.js:2:1481
+trigger@https://biblioteca.um.edu.ar/opac-tmpl/bootstrap/lib/jquery/jquery-3.6.0.min_22.0504000.js:2:72086
+r@https://biblioteca.um.edu.ar/opac-tmpl/lib/jquery/plugins/jquery.dataTables.min_22.0504000.js:88:226
+ua@https://biblioteca.um.edu.ar/opac-tmpl/lib/jquery/plugins/jquery.dataTables.min_22.0504000.js:61:264
+ha@https://biblioteca.um.edu.ar/opac-tmpl/lib/jquery/plugins/jquery.dataTables.min_22.0504000.js:61:154
+e@https://biblioteca.um.edu.ar/opac-tmpl/lib/jquery/plugins/jquery.dataTables.min_22.0504000.js:105:32
+n/<@https://biblioteca.um.edu.ar/opac-tmpl/lib/jquery/plugins/jquery.dataTables.min_22.0504000.js:105:118
+each@https://biblioteca.um.edu.ar/opac-tmpl/bootstrap/lib/jquery/jquery-3.6.0.min_22.0504000.js:2:3003
+each@https://biblioteca.um.edu.ar/opac-tmpl/bootstrap/lib/jquery/jquery-3.6.0.min_22.0504000.js:2:1481
+n@https://biblioteca.um.edu.ar/opac-tmpl/lib/jquery/plugins/jquery.dataTables.min_22.0504000.js:95:199
+KohaTable@https://biblioteca.um.edu.ar/cgi-bin/koha/opac-detail.pl?biblionumber=60481&query_desc=kw%2Cwrdl%3A%20ingenieria%20de%20software%20pressman:1396:11
+@https://biblioteca.um.edu.ar/cgi-bin/koha/opac-detail.pl?biblionumber=60481&query_desc=kw%2Cwrdl%3A%20ingenieria%20de%20software%20pressman:1642:22
+e@https://biblioteca.um.edu.ar/opac-tmpl/bootstrap/lib/jquery/jquery-3.6.0.min_22.0504000.js:2:30038
+Deferred/then/l/</t<@https://biblioteca.um.edu.ar/opac-tmpl/bootstrap/lib/jquery/jquery-3.6.0.min_22.0504000.js:2:30340
+
+1698517330263	geckodriver	INFO	Listening on 127.0.0.1:51677
+1698517330395	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "38589" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileRFozTi"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+(firefox:22073): Gtk-WARNING **: 15:22:10.867: Theme directory actions/16-Dark of theme Zafiro-Icons-Dark-Blue-f has no size field
+
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698517331226	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698517331352	Marionette	INFO	Listening on port 36271
+WebDriver BiDi listening on ws://127.0.0.1:38589
+Read port: 36271
+1698517331583	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:38589/devtools/browser/93daa20c-3eb8-45fe-a700-8382dc18e364
+1698517337764	Marionette	INFO	Stopped listening on port 36271
+JavaScript warning: https://virtual.um.edu.ar/lib/javascript.php/1681130965/lib/requirejs/require.min.js, line 5: Script terminated by timeout at:
+requirejs@https://virtual.um.edu.ar/lib/javascript.php/1681130965/lib/requirejs/require.min.js:5:14539
+o/m</<@https://virtual.um.edu.ar/lib/requirejs.php/1681130965/core/first.js:7:2186
+o/m<@https://virtual.um.edu.ar/lib/requirejs.php/1681130965/core/first.js:7:2158
+
+1698517346091	geckodriver	INFO	Listening on 127.0.0.1:48429
+1698517346170	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "33005" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofilehpiWEC"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+(firefox:22525): Gtk-WARNING **: 15:22:26.623: Theme directory actions/16-Dark of theme Zafiro-Icons-Dark-Blue-f has no size field
+
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698517346953	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698517347083	Marionette	INFO	Listening on port 44691
+WebDriver BiDi listening on ws://127.0.0.1:33005
+Read port: 44691
+1698517347320	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:33005/devtools/browser/7b8c9e9d-580c-4fa1-a91f-28db9de88204
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://virtual.um.edu.ar."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://virtual.um.edu.ar."
+JavaScript error: https://virtual.um.edu.ar/lib/javascript.php/1681130965/lib/requirejs/require.min.js, line 5: Error: Script error for "core/first"
+http://requirejs.org/docs/errors.html#scripterror
+1698517359925	Marionette	INFO	Stopped listening on port 44691
+JavaScript warning: https://virtual.um.edu.ar/lib/requirejs.php/1681130965/core/first.js, line 543: Script terminated by timeout at:
+@https://virtual.um.edu.ar/lib/requirejs.php/1681130965/core/first.js:543:103
+execCb@https://virtual.um.edu.ar/lib/javascript.php/1681130965/lib/requirejs/require.min.js:5:12861
+check@https://virtual.um.edu.ar/lib/javascript.php/1681130965/lib/requirejs/require.min.js:5:6615
+enable@https://virtual.um.edu.ar/lib/javascript.php/1681130965/lib/requirejs/require.min.js:5:9363
+enable@https://virtual.um.edu.ar/lib/javascript.php/1681130965/lib/requirejs/require.min.js:5:11918
+newContext/enable/<@https://virtual.um.edu.ar/lib/javascript.php/1681130965/lib/requirejs/require.min.js:5:9220
+bind/<@https://virtual.um.edu.ar/lib/javascript.php/1681130965/lib/requirejs/require.min.js:5:814
+each@https://virtual.um.edu.ar/lib/javascript.php/1681130965/lib/requirejs/require.min.js:5:289
+enable@https://virtual.um.edu.ar/lib/javascript.php/1681130965/lib/requirejs/require.min.js:5:8720
+enable@https://virtual.um.edu.ar/lib/javascript.php/1681130965/lib/requirejs/require.min.js:5:11918
+newContext/enable/<@https://virtual.um.edu.ar/lib/javascript.php/1681130965/lib/requirejs/require.min.js:5:9220
+bind/<@https://virtual.um.edu.ar/lib/javascript.php/1681130965/lib/requirejs/require.min.js:5:814
+each@https://virtual.um.edu.ar/lib/javascript.php/1681130965/lib/requirejs/require.min.js:5:289
+enable@https://virtual.um.edu.ar/lib/javascript.php/1681130965/lib/requirejs/require.min.js:5:8720
+enable@https://virtual.um.edu.ar/lib/javascript.php/1681130965/lib/requirejs/require.min.js:5:11918
+newContext/enable/<@https://virtual.um.edu.ar/lib/javascript.php/1681130965/lib/requirejs/require.min.js:5:9220
+bind/<@https://virtual.um.edu.ar/lib/javascript.php/1681130965/lib/requirejs/require.min.js:5:814
+each@https://virtual.um.edu.ar/lib/javascript.php/1681130965/lib/requirejs/require.min.js:5:289
+enable@https://virtual.um.edu.ar/lib/javascript.php/1681130965/lib/requirejs/require.min.js:5:8720
+init@https://virtual.um.edu.ar/lib/javascript.php/1681130965/lib/requirejs/require.min.js:5:5721
+newContext/makeRequire/o/<@https://virtual.um.edu.ar/lib/javascript.php/1681130965/lib/requirejs/require.min.js:5:11235
+
+1698517458221	geckodriver	INFO	Listening on 127.0.0.1:38917
+1698517458307	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/usr ... te" "--remote-debugging-port" "40951" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "/tmp/rust_mozprofileTkVS3u"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+
+(firefox:24023): Gtk-WARNING **: 15:24:18.757: Theme directory actions/16-Dark of theme Zafiro-Icons-Dark-Blue-f has no size field
+
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698517459088	Marionette	INFO	Marionette enabled
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1698517459227	Marionette	INFO	Listening on port 34583
+WebDriver BiDi listening on ws://127.0.0.1:40951
+Read port: 34583
+1698517459482	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: ({})
+DevTools listening on ws://127.0.0.1:40951/devtools/browser/7078fa9f-c3bd-4da6-9505-dca7c918470c
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://biblioteca.um.edu.ar."
+1698517472043	Marionette	INFO	Stopped listening on port 34583
+JavaScript warning: https://biblioteca.um.edu.ar/opac-tmpl/bootstrap/lib/jquery/jquery-3.6.0.min_22.0504000.js, line 2: Script terminated by timeout at:
+Z@https://biblioteca.um.edu.ar/opac-tmpl/bootstrap/lib/jquery/jquery-3.6.0.min_22.0504000.js:2:33809
+data@https://biblioteca.um.edu.ar/opac-tmpl/bootstrap/lib/jquery/jquery-3.6.0.min_22.0504000.js:2:34492
+Ea@https://biblioteca.um.edu.ar/opac-tmpl/lib/jquery/plugins/jquery.dataTables.min_22.0504000.js:22:462
+n/<@https://biblioteca.um.edu.ar/opac-tmpl/lib/jquery/plugins/jquery.dataTables.min_22.0504000.js:102:42
+each@https://biblioteca.um.edu.ar/opac-tmpl/bootstrap/lib/jquery/jquery-3.6.0.min_22.0504000.js:2:3003
+each@https://biblioteca.um.edu.ar/opac-tmpl/bootstrap/lib/jquery/jquery-3.6.0.min_22.0504000.js:2:1481
+n@https://biblioteca.um.edu.ar/opac-tmpl/lib/jquery/plugins/jquery.dataTables.min_22.0504000.js:95:199
+KohaTable@https://biblioteca.um.edu.ar/cgi-bin/koha/opac-detail.pl?biblionumber=60481&query_desc=kw%2Cwrdl%3A%20ingenieria%20de%20software%20pressman:1396:11
+@https://biblioteca.um.edu.ar/cgi-bin/koha/opac-detail.pl?biblionumber=60481&query_desc=kw%2Cwrdl%3A%20ingenieria%20de%20software%20pressman:1642:22
+e@https://biblioteca.um.edu.ar/opac-tmpl/bootstrap/lib/jquery/jquery-3.6.0.min_22.0504000.js:2:30038
+Deferred/then/l/</t<@https://biblioteca.um.edu.ar/opac-tmpl/bootstrap/lib/jquery/jquery-3.6.0.min_22.0504000.js:2:30340
+

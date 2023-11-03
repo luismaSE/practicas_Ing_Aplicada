@@ -1,0 +1,26 @@
+{
+  "applications": "*",
+  "changelogDate": "20231026163956",
+  "entityTableName": "etiqueta",
+  "fields": [
+    {
+      "fieldName": "nombreEtiqueta",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mensajes",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Etiqueta",
+  "relationships": [
+    {
+      "otherEntityName": "mensaje",
+      "otherEntityRelationshipName": "etiquetas",
+      "relationshipName": "mensajes",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

@@ -1,0 +1,48 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="mensajePrivado">
+      <h2 data-cy="mensajePrivadoDetailsHeading"><span jhiTranslate="microblogApp.mensajePrivado.detail.title">Mensaje Privado</span></h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">ID</span></dt>
+        <dd>
+          <span>{{ mensajePrivado.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="microblogApp.mensajePrivado.texto">Texto</span></dt>
+        <dd>
+          <span>{{ mensajePrivado.texto }}</span>
+        </dd>
+        <dt><span jhiTranslate="microblogApp.mensajePrivado.fecha">Fecha</span></dt>
+        <dd>
+          <span>{{ mensajePrivado.fecha | formatMediumDate }}</span>
+        </dd>
+        <dt><span jhiTranslate="microblogApp.mensajePrivado.autor">Autor</span></dt>
+        <dd>
+          <div *ngIf="mensajePrivado.autor">
+            <a [routerLink]="['/usuario', mensajePrivado.autor.id, 'view']">{{ mensajePrivado.autor.alias }}</a>
+          </div>
+        </dd>
+        <dt><span jhiTranslate="microblogApp.mensajePrivado.destino">Destino</span></dt>
+        <dd>
+          <div *ngIf="mensajePrivado.destino">
+            <a [routerLink]="['/usuario', mensajePrivado.destino.id, 'view']">{{ mensajePrivado.destino.alias }}</a>
+          </div>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+      </button>
+
+      <button type="button" [routerLink]="['/mensaje-privado', mensajePrivado.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,106 @@
+<div>
+  <h2 id="page-heading" data-cy="MensajeHeading">
+    <span jhiTranslate="microblogApp.mensaje.home.title">Mensajes</span>
+
+    <div class="d-flex justify-content-end">
+      <button class="btn btn-info me-2" (click)="load()" [disabled]="isLoading">
+        <fa-icon icon="sync" [spin]="isLoading"></fa-icon>
+        <span jhiTranslate="microblogApp.mensaje.home.refreshListLabel">Refresh list</span>
+      </button>
+
+      <button
+        id="jh-create-entity"
+        data-cy="entityCreateButton"
+        class="btn btn-primary jh-create-entity create-mensaje"
+        [routerLink]="['/mensaje/new']"
+      >
+        <fa-icon icon="plus"></fa-icon>
+        <span jhiTranslate="microblogApp.mensaje.home.createLabel"> Create a new Mensaje </span>
+      </button>
+    </div>
+  </h2>
+
+  <jhi-alert-error></jhi-alert-error>
+
+  <jhi-alert></jhi-alert>
+
+  <div class="alert alert-warning" id="no-result" *ngIf="mensajes?.length === 0">
+    <span jhiTranslate="microblogApp.mensaje.home.notFound">No Mensajes found</span>
+  </div>
+
+  <div class="table-responsive table-entities" id="entities" *ngIf="mensajes && mensajes.length > 0">
+    <table class="table table-striped" aria-describedby="page-heading">
+      <thead>
+        <tr jhiSort [(predicate)]="predicate" [(ascending)]="ascending" (sortChange)="navigateToWithComponentValues()">
+          <th scope="col" jhiSortBy="id">
+            <div class="d-flex">
+              <span jhiTranslate="global.field.id">ID</span>
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col" jhiSortBy="texto">
+            <div class="d-flex">
+              <span jhiTranslate="microblogApp.mensaje.texto">Texto</span>
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col" jhiSortBy="fecha">
+            <div class="d-flex">
+              <span jhiTranslate="microblogApp.mensaje.fecha">Fecha</span>
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col" jhiSortBy="autor.alias">
+            <div class="d-flex">
+              <span jhiTranslate="microblogApp.mensaje.autor">Autor</span>
+              <fa-icon class="p-1" icon="sort"></fa-icon>
+            </div>
+          </th>
+          <th scope="col"></th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let mensaje of mensajes; trackBy: trackId" data-cy="entityTable">
+          <td>
+            <a [routerLink]="['/mensaje', mensaje.id, 'view']">{{ mensaje.id }}</a>
+          </td>
+          <td>{{ mensaje.texto }}</td>
+          <td>{{ mensaje.fecha | formatMediumDate }}</td>
+          <td>
+            <div *ngIf="mensaje.autor">
+              <a [routerLink]="['/usuario', mensaje.autor.id, 'view']">{{ mensaje.autor.alias }}</a>
+            </div>
+          </td>
+          <td class="text-end">
+            <div class="btn-group">
+              <button
+                type="submit"
+                [routerLink]="['/mensaje', mensaje.id, 'view']"
+                class="btn btn-info btn-sm"
+                data-cy="entityDetailsButton"
+              >
+                <fa-icon icon="eye"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.view">View</span>
+              </button>
+
+              <button
+                type="submit"
+                [routerLink]="['/mensaje', mensaje.id, 'edit']"
+                class="btn btn-primary btn-sm"
+                data-cy="entityEditButton"
+              >
+                <fa-icon icon="pencil-alt"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.edit">Edit</span>
+              </button>
+
+              <button type="submit" (click)="delete(mensaje)" class="btn btn-danger btn-sm" data-cy="entityDeleteButton">
+                <fa-icon icon="times"></fa-icon>
+                <span class="d-none d-md-inline" jhiTranslate="entity.action.delete">Delete</span>
+              </button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

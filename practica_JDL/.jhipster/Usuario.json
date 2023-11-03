@@ -1,0 +1,76 @@
+{
+  "applications": "*",
+  "changelogDate": "20231026163756",
+  "entityTableName": "usuario",
+  "fields": [
+    {
+      "fieldName": "nombreUsuario",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "correo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "clave",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "nombreCompleto",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "descripcion",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "seguidos",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "seguidores",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "muro",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mensajes",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Usuario",
+  "relationships": [
+    {
+      "otherEntityName": "muroUsuario",
+      "otherEntityRelationshipName": "usuario",
+      "relationshipName": "muro",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "usuario",
+      "otherEntityRelationshipName": "seguidores",
+      "relationshipName": "seguidos",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "mensaje",
+      "otherEntityRelationshipName": "autor",
+      "relationshipName": "mensajes",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "usuario",
+      "otherEntityRelationshipName": "seguidos",
+      "relationshipName": "seguidores",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

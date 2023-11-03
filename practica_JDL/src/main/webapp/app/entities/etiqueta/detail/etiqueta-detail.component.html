@@ -1,0 +1,46 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="etiqueta">
+      <h2 data-cy="etiquetaDetailsHeading">
+        <span jhiTranslate="jhLogstashApp.etiqueta.detail.title">__jhiTransformTranslate__('jhLogstashApp.etiqueta.detail.title')</span>
+      </h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">__jhiTransformTranslate__('global.field.id')</span></dt>
+        <dd>
+          <span>{{ etiqueta.id }}</span>
+        </dd>
+        <dt>
+          <span jhiTranslate="jhLogstashApp.etiqueta.nombreEtiqueta"
+            >__jhiTransformTranslate__('jhLogstashApp.etiqueta.nombreEtiqueta')</span
+          >
+        </dt>
+        <dd>
+          <span>{{ etiqueta.nombreEtiqueta }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhLogstashApp.etiqueta.mensajes">__jhiTransformTranslate__('jhLogstashApp.etiqueta.mensajes')</span></dt>
+        <dd>
+          <span>{{ etiqueta.mensajes }}</span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"
+          >__jhiTransformTranslate__('entity.action.back')</span
+        >
+      </button>
+
+      <button type="button" [routerLink]="['/etiqueta', etiqueta.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"
+          >__jhiTransformTranslate__('entity.action.edit')</span
+        >
+      </button>
+    </div>
+  </div>
+</div>

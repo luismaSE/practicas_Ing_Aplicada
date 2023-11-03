@@ -1,0 +1,39 @@
+{
+  "applications": ["microblog"],
+  "changelogDate": "20231027214812",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "mensaje",
+  "fields": [
+    {
+      "fieldName": "texto",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fecha",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": false,
+  "name": "Mensaje",
+  "pagination": "no",
+  "readOnly": false,
+  "relationships": [
+    {
+      "otherEntityField": "alias",
+      "otherEntityName": "usuario",
+      "otherEntityRelationshipName": "mensajePublicado",
+      "ownerSide": true,
+      "relationshipName": "autor",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "usuario",
+      "otherEntityRelationshipName": "mensajeMencionado",
+      "relationshipName": "menciones",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "service": "no"
+}

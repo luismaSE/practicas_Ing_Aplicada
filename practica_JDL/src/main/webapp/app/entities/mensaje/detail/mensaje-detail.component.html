@@ -1,0 +1,69 @@
+<div class="d-flex justify-content-center">
+  <div class="col-8">
+    <div *ngIf="mensaje">
+      <h2 data-cy="mensajeDetailsHeading">
+        <span jhiTranslate="jhLogstashApp.mensaje.detail.title">__jhiTransformTranslate__('jhLogstashApp.mensaje.detail.title')</span>
+      </h2>
+
+      <hr />
+
+      <jhi-alert-error></jhi-alert-error>
+
+      <jhi-alert></jhi-alert>
+
+      <dl class="row-md jh-entity-details">
+        <dt><span jhiTranslate="global.field.id">__jhiTransformTranslate__('global.field.id')</span></dt>
+        <dd>
+          <span>{{ mensaje.id }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhLogstashApp.mensaje.autor">__jhiTransformTranslate__('jhLogstashApp.mensaje.autor')</span></dt>
+        <dd>
+          <span>{{ mensaje.autor }}</span>
+        </dd>
+        <dt>
+          <span jhiTranslate="jhLogstashApp.mensaje.fechaPublicacion"
+            >__jhiTransformTranslate__('jhLogstashApp.mensaje.fechaPublicacion')</span
+          >
+        </dt>
+        <dd>
+          <span>{{ mensaje.fechaPublicacion | formatMediumDatetime }}</span>
+        </dd>
+        <dt>
+          <span jhiTranslate="jhLogstashApp.mensaje.textoMensaje">__jhiTransformTranslate__('jhLogstashApp.mensaje.textoMensaje')</span>
+        </dt>
+        <dd>
+          <span>{{ mensaje.textoMensaje }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhLogstashApp.mensaje.etiquetas">__jhiTransformTranslate__('jhLogstashApp.mensaje.etiquetas')</span></dt>
+        <dd>
+          <span>{{ mensaje.etiquetas }}</span>
+        </dd>
+        <dt><span jhiTranslate="jhLogstashApp.mensaje.autor">__jhiTransformTranslate__('jhLogstashApp.mensaje.autor')</span></dt>
+        <dd>
+          <div *ngIf="mensaje.autor">
+            <a [routerLink]="['/usuario', mensaje.autor.id, 'view']">{{ mensaje.autor.id }}</a>
+          </div>
+        </dd>
+        <dt><span jhiTranslate="jhLogstashApp.mensaje.etiquetas">__jhiTransformTranslate__('jhLogstashApp.mensaje.etiquetas')</span></dt>
+        <dd>
+          <span *ngFor="let etiquetas of mensaje.etiquetas; let last = last">
+            <a [routerLink]="['/etiqueta', etiquetas.id, 'view']">{{ etiquetas.id }}</a
+            >{{ last ? '' : ', ' }}
+          </span>
+        </dd>
+      </dl>
+
+      <button type="submit" (click)="previousState()" class="btn btn-info" data-cy="entityDetailsBackButton">
+        <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back"
+          >__jhiTransformTranslate__('entity.action.back')</span
+        >
+      </button>
+
+      <button type="button" [routerLink]="['/mensaje', mensaje.id, 'edit']" class="btn btn-primary">
+        <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit"
+          >__jhiTransformTranslate__('entity.action.edit')</span
+        >
+      </button>
+    </div>
+  </div>
+</div>

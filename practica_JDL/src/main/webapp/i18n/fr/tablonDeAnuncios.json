@@ -1,0 +1,23 @@
+{
+  "jhLogstashApp": {
+    "tablonDeAnuncios": {
+      "home": {
+        "title": "TablonDeAnuncios",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Tablon De Anuncios",
+        "createOrEditLabel": "Créer ou éditer un Tablon De Anuncios",
+        "notFound": "Aucun Tablon De Anuncios trouvé"
+      },
+      "created": "Un nouveau Tablon De Anuncios a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Tablon De Anuncios avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Tablon De Anuncios avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Tablon De Anuncios {{ id }} ?"
+      },
+      "detail": {
+        "title": "Tablon De Anuncios"
+      },
+      "id": "ID"
+    }
+  }
+}

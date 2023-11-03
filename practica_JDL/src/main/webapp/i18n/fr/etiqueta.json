@@ -1,0 +1,26 @@
+{
+  "jhLogstashApp": {
+    "etiqueta": {
+      "home": {
+        "title": "Etiquetas",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Etiqueta",
+        "createOrEditLabel": "Créer ou éditer un Etiqueta",
+        "notFound": "Aucun Etiqueta trouvé"
+      },
+      "created": "Un nouveau Etiqueta a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Etiqueta avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Etiqueta avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Êtes-vous certain de vouloir supprimer le Etiqueta {{ id }} ?"
+      },
+      "detail": {
+        "title": "Etiqueta"
+      },
+      "id": "ID",
+      "nombreEtiqueta": "Nombre Etiqueta",
+      "mensajes": "Mensajes",
+      "mensajes": "Mensajes"
+    }
+  }
+}
